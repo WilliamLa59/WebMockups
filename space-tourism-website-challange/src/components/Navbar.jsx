@@ -32,19 +32,19 @@ export const Navbar = () => {
             </div>
             <li>
                 <Link to="/" style={currentRoute === "/" ? {borderBottom: "2px solid white", backgroundImage: "../assets/home/background-home-desktop.jpg"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/')}>00 Home</Link>
+                    onClick={() => setCurrentRoute('/')}><span>00</span> Home</Link>
             </li>
             <li>
                 <Link to="/destination"  style={currentRoute === "/destination" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/destination')}>01 Destination</Link>
+                    onClick={() => setCurrentRoute('/destination')}><span>01</span> Destination</Link>
             </li>
             <li>
                 <Link to="/crew" style={currentRoute === "/crew" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/crew')}>02 Crew</Link>
+                    onClick={() => setCurrentRoute('/crew')}><span>02</span> Crew</Link>
             </li>
             <li>
                 <Link to="/technology" style={currentRoute === "/technology" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/technology')}>03 Technology</Link>
+                    onClick={() => setCurrentRoute('/technology')}><span>03</span> Technology</Link>
             </li>
             </ul>
     </header>
