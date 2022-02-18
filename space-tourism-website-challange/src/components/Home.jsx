@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <div className="screen">
+    <div className="home-container">
       <div className='home-text'>
         <h5>So, you want to travel to</h5>
         <h1>SPACE</h1>
@@ -11,7 +11,11 @@ export const Home = () => {
         because we’ll give you a truly out of this world experience!</p>
       </div>
       <div className="home-btn">
-        <button className="btn-explore"><a href="/destination">EXPLORE</a></button>
+        <form action="/destination" className="btn-container">
+          <input type="submit" className="btn-explore btn" value="EXPLORE"/>
+          <div className='btn-hover'></div>
+        </form>
+    
       </div>
     </div>
   )

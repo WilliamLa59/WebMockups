@@ -67,6 +67,7 @@ p {
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -150,11 +151,13 @@ header {
 }
 
 .navbar a:hover {
-  border-bottom: 2px solid #fff !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Home */
 .screen-container {
+  /* display: flex; */
+  justify-content: space-between;
 }
 
 .home-text {
@@ -162,7 +165,7 @@ header {
   width: 23%;
   margin-top: 15%;
   margin-left: 9%;
-  margin-bottom: 12%;
+  /* margin-bottom: 12%; */
   float: left;
 }
 
@@ -172,11 +175,38 @@ header {
 
 .home-btn {
   float: left;
-  height: 25%;
-  width: 14%;
+  height: 274px;
+  width: 274px;
+  margin-top: 22%;
+  margin-left: 43%;
+  /* margin-bottom: 12%; */
+}
+.btn-container {
+  height: 100%;
+  width: 100%;
+}
+.btn-explore {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
 }
 
-.btn-explore {
-  height: 25%;
-  width: 14%;
+.btn-hover {
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  float: left;
+  height: 274px;
+  width: 274px;
+  margin-top: -274px;
+  border-radius: 100%;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-explore:hover + .btn-hover {
+  transform: scale(1.5);
 }
