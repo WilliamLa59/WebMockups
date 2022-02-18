@@ -31,20 +31,20 @@ export const Navbar = () => {
             <img src={closeIcon} alt="" />
             </div>
             <li>
-                <Link to="/" style={currentRoute === "/" ? {borderBottom: "2px solid white", backgroundImage: "../assets/home/background-home-desktop.jpg"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/')}><span>00</span> Home</Link>
+                <Link to="/" className="nav-links" style={currentRoute === "/" ? {borderBottom: "2px solid white", backgroundImage: "../assets/home/background-home-desktop.jpg"} :{borderBottom: "2px solid transparent"}} 
+                    onClick={() => setCurrentRoute('/')}><span>00 </span> Home</Link>
             </li>
             <li>
-                <Link to="/destination"  style={currentRoute === "/destination" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/destination')}><span>01</span> Destination</Link>
+                <Link to="/destination" className="nav-links" style={currentRoute === "/destination" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
+                    onClick={() => setCurrentRoute('/destination')}><span>01</span>  Destination</Link>
             </li>
             <li>
-                <Link to="/crew" style={currentRoute === "/crew" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/crew')}><span>02</span> Crew</Link>
+                <Link to="/crew" className="nav-links" style={currentRoute === "/crew" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
+                    onClick={() => setCurrentRoute('/crew')}><span>02 </span> Crew</Link>
             </li>
             <li>
-                <Link to="/technology" style={currentRoute === "/technology" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                    onClick={() => setCurrentRoute('/technology')}><span>03</span> Technology</Link>
+                <Link to="/technology" className="nav-links" style={currentRoute === "/technology" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
+                    onClick={() => setCurrentRoute('/technology')}><span>03 </span> Technology</Link>
             </li>
             </ul>
     </header>

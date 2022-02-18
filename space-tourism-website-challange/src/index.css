@@ -1,3 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+/* Styling Set*/
+:root {
+  --main-bg-color: #0b0d17;
+  --main-text-color: #d0d6f9;
+  --main-title-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+.sub1 {
+  color: var(--main-title-color);
+  font-family: "Bellefair", serif;
+}
+
+h5,
+.sub2,
+.nav-links,
+p {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 150px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+.nav-links {
+  letter-spacing: 2.7px;
+}
+
+.sub1 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  color: var(--main-text-color);
+}
+
+.sub2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  color: var(--main-title-color);
+}
+
+p {
+  font-size: 18px;
+  color: var(--main-title-color);
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -20,10 +87,11 @@ code {
     monospace;
 }
 
+/* Navbar */
 header {
   display: flex;
   width: 100%;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .logo {
@@ -74,6 +142,7 @@ header {
   padding: 2rem 0;
   border-bottom: 2px solid transparent;
   transition: 0.5s ease;
+  letter-spacing: 2.7px;
 }
 
 .navbar span {
@@ -82,4 +151,32 @@ header {
 
 .navbar a:hover {
   border-bottom: 2px solid #fff !important;
+}
+
+/* Home */
+.screen-container {
+}
+
+.home-text {
+  height: 35%;
+  width: 23%;
+  margin-top: 15%;
+  margin-left: 9%;
+  margin-bottom: 12%;
+  float: left;
+}
+
+.home-text h1 {
+  margin: 0;
+}
+
+.home-btn {
+  float: left;
+  height: 25%;
+  width: 14%;
+}
+
+.btn-explore {
+  height: 25%;
+  width: 14%;
 }
