@@ -13,7 +13,7 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />}  style={{backgroundImage: "url(../assets/home/background-home-desktop.jpg)"}}/>
         <Route path="/destination" element={<Destination />} />
         <Route path="/crew" element={<Crew />} />
         <Route path="/technology" element={<Technology />} />

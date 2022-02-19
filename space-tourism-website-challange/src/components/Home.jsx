@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 export const Home = () => {
+  document.body.className = "home-page";
   return (
     <div className="home-container">
       <div className='home-text'>
@@ -15,7 +16,6 @@ export const Home = () => {
           <input type="submit" className="btn-explore btn" value="EXPLORE"/>
           <div className='btn-hover'></div>
         </form>
-    
       </div>
     </div>
   )

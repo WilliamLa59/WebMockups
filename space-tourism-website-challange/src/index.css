@@ -65,6 +65,21 @@ p {
   color: var(--main-title-color);
 }
 
+.home-page {
+  background-image: url("../src/assets/home/background-home-desktop.jpg");
+}
+
+.destination-page {
+  background-image: url("../src/assets/destination/background-destination-desktop.jpg");
+}
+
+.crew-page {
+  background-image: url("../src/assets/crew/background-crew-desktop.jpg");
+}
+
+.technology-page {
+  background-image: url("../src/assets/technology/background-technology-desktop.jpg");
+}
 body {
   margin: 0;
   padding: 0;
@@ -74,7 +89,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../src/assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
