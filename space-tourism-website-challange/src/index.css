@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow&family=Bellefair&display=swap");
 
 /* Styling Set*/
 :root {
@@ -18,8 +18,7 @@ h4,
 
 h5,
 .sub2,
-.nav-links,
-p {
+.nav-links {
   font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -30,14 +29,17 @@ h1 {
 
 h2 {
   font-size: 100px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 56px;
+  font-weight: normal;
 }
 
 h4 {
   font-size: 32px;
+  font-weight: normal;
 }
 
 .nav-links {
@@ -61,8 +63,12 @@ h5 {
 }
 
 p {
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
   color: var(--main-title-color);
+  font-weight: normal;
+  line-height: 178%;
+  letter-spacing: 2.7px;
 }
 
 .home-page {
@@ -170,7 +176,6 @@ header {
 
 /* Home */
 .screen-container {
-  /* display: flex; */
   justify-content: space-between;
 }
 
@@ -179,7 +184,6 @@ header {
   width: 23%;
   margin-top: 15%;
   margin-left: 9%;
-  /* margin-bottom: 12%; */
   float: left;
 }
 
@@ -193,7 +197,6 @@ header {
   width: 274px;
   margin-top: 22%;
   margin-left: 43%;
-  /* margin-bottom: 12%; */
 }
 .btn-container {
   height: 100%;
@@ -223,4 +226,73 @@ header {
 
 .btn-explore:hover + .btn-hover {
   transform: scale(1.5);
+}
+
+/* Destination */
+.destination-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.header-container {
+  padding-left: 12%;
+}
+
+.img-container {
+  float: left;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+.dest-img {
+  margin-top: 20%;
+  width: 100%;
+  height: 100%;
+}
+
+.destination-text {
+  float: left;
+  width: 30%;
+  height: 43;
+  margin-left: 18%;
+  margin-top: 5%;
+}
+.destination-text h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.destination-text hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.destination-text h4 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.dest-navbar {
+  color: #fff;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  padding-inline-start: 0px;
+}
+
+.dest-navbar li {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.distance-text {
+  float: left;
+  margin-right: 6rem;
+}
+
+.travel.text {
+  float: left;
 }
