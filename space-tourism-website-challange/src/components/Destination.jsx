@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
 import moon from '../assets/destination/image-moon.png'
@@ -7,11 +7,29 @@ import europa from '../assets/destination/image-europa.png'
 import titan from '../assets/destination/image-titan.png'
 
 export const Destination = () => {
-  const [currentDestination, setDestination] = useState(moon);
-  const [currentDestTitle, setDestTitle] = useState("MOON");
-  const [currentDestDesc, setDestDesc] = useState("See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.");
-  const [distance, setDistance] = useState("384,400 KM");
-  const [travelTime, setTravelTime] = useState("3 DAYS");
+  //sets inital states to respective value in localStorage or defaults to Moon on first render
+  const initalDest = () => localStorage.getItem("dest") || moon;
+  const initalTitle = () => localStorage.getItem("destTitle") || "MOON";
+  const initalDesc = () => localStorage.getItem("destDesc") || "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.";
+  const initalDistance = () => localStorage.getItem("distance") || "384,400 KM"; 
+  const initalTravelTime = () => localStorage.getItem("travelTime") || "3 DAYS";
+
+  //sets
+  const [currentDestination, setDestination] = useState(initalDest);
+  const [currentDestTitle, setDestTitle] = useState(initalTitle);
+  const [currentDestDesc, setDestDesc] = useState(initalDesc);
+  const [distance, setDistance] = useState(initalDistance);
+  const [travelTime, setTravelTime] = useState(initalTravelTime);
+
+  //
+  useEffect(()=> {
+    localStorage.setItem("dest", currentDestination);
+    localStorage.setItem("destTitle", currentDestTitle);
+    localStorage.setItem("destDesc", currentDestDesc);
+    localStorage.setItem("distance", distance);
+    localStorage.setItem("travelTime", travelTime);
+    }, [currentDestination, currentDestTitle, currentDestDesc, distance, travelTime]
+  )
 
   document.body.className = "destination-page";
   return (
