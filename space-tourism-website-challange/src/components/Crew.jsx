@@ -14,14 +14,15 @@ export const Crew = () => {
   const Victor = {role: "PILOT", name: "VICTOR GLOVER", bio: "Pilot on the first operational flight of the SpaceX Crew Dragon to the  International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. "};
   const Anousheh = {role: "FLIGHT ENGINEER", name: "ANOUSHEH ANSARI", bio: " Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. "};
   
-  // const initialCrewMember = () => localStorage.getItem("crewMember") || Douglas;
+  const initialCrewMember = () => JSON.parse(localStorage.getItem("crewMember")) || Douglas;
   const initalCrewImg = () => localStorage.getItem("crewMemberImg") || douglasImg;
 
   
-  const [currentCrewMember, setCurrentCrewMember] = useState(Douglas);
+  const [currentCrewMember, setCurrentCrewMember] = useState(initialCrewMember);
   const [currentCrewImg, setCurrentCrewImg] = useState(initalCrewImg)
 
   useEffect(() => {
+    localStorage.setItem("crewMember", JSON.stringify(currentCrewMember));
     localStorage.setItem("crewMemberImg", currentCrewImg);
   });
 
@@ -50,22 +51,22 @@ export const Crew = () => {
           <img 
           className="crew-nav-btn" 
           src={button} alt="" 
-          onClick={() => setCurrentCrewMember(Douglas)}/>
+          onClick={() => {setCurrentCrewMember(Douglas); setCurrentCrewImg(douglasImg)}}/>
           
           <img 
           className="crew-nav-btn" 
           src={button} alt="" 
-          onClick={() => setCurrentCrewMember(Mark)}/>
+          onClick={() => {setCurrentCrewMember(Mark); setCurrentCrewImg(markImg)}}/>
 
           <img 
           className="crew-nav-btn" 
           src={button} alt="" 
-          onClick={() => setCurrentCrewMember(Victor)}/>
+          onClick={() => {setCurrentCrewMember(Victor); setCurrentCrewImg(victorImg)}}/>
 
           <img 
           className="crew-nav-btn" 
           src={button} alt="" 
-          onClick={() => setCurrentCrewMember(Anousheh)}/>
+          onClick={() => {setCurrentCrewMember(Anousheh); setCurrentCrewImg(anoushehImg)}}/>
         </div>
       </div>
 
