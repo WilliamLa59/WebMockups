@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 import douglasImg from "../assets/crew/image-douglas-hurley.png";
 import markImg from "../assets/crew/image-mark-shuttleworth.png";
@@ -26,10 +27,6 @@ export const Crew = () => {
     localStorage.setItem("crewMemberImg", currentCrewImg);
   });
 
-  // console.log(initialCrewMember);
-  console.log(currentCrewMember);
-
-
   document.body.className = "crew-page";
   return (
     <div className='crew-container'>
@@ -37,41 +34,46 @@ export const Crew = () => {
         <sub className='sub1 crew-header'> 0 2 MEET YOUR CREW</sub>
       </div>
       
-      <div className='text-container'>
-        <div className='crew-role'>
-          <h4>{currentCrewMember.role}</h4>
+      <div className='crew-text-container'>
+        <div>
+          <h4 className='crew-role'>{currentCrewMember.role}</h4>
         </div>
-        <div className='crew-name'>
-          <h3>{currentCrewMember.name}</h3>
+        <div >
+          <h3 className='crew-name'>{currentCrewMember.name}</h3>
         </div>
-        <div className='crew-bio'>
-          <p>{currentCrewMember.bio}</p>
+        <div >
+          <p className='crew-bio'>{currentCrewMember.bio}</p>
         </div>
         <div className='crew-nav'>
-          <img 
+        
+          <FontAwesomeIcon icon={faCircle} 
           className="crew-nav-btn" 
-          src={button} alt="" 
-          onClick={() => {setCurrentCrewMember(Douglas); setCurrentCrewImg(douglasImg)}}/>
-          
-          <img 
-          className="crew-nav-btn" 
-          src={button} alt="" 
-          onClick={() => {setCurrentCrewMember(Mark); setCurrentCrewImg(markImg)}}/>
+          onClick={() => {setCurrentCrewMember(Douglas); setCurrentCrewImg(douglasImg)}}
+          style={currentCrewMember.role === "COMMANDER" ? {opacity: 100} : {opacity: 0.17}}
+          />
 
-          <img 
+          <FontAwesomeIcon icon={faCircle} 
           className="crew-nav-btn" 
-          src={button} alt="" 
-          onClick={() => {setCurrentCrewMember(Victor); setCurrentCrewImg(victorImg)}}/>
+          onClick={() => {setCurrentCrewMember(Mark); setCurrentCrewImg(markImg)}}
+          style={currentCrewMember.role === "MISSION SPECIALIST" ? {opacity: 100} : {opacity: 0.17}}
+          />
 
-          <img 
+          <FontAwesomeIcon icon={faCircle} 
           className="crew-nav-btn" 
-          src={button} alt="" 
-          onClick={() => {setCurrentCrewMember(Anousheh); setCurrentCrewImg(anoushehImg)}}/>
+          onClick={() => {setCurrentCrewMember(Victor); setCurrentCrewImg(victorImg)}}
+          style={currentCrewMember.role === "PILOT" ? {opacity: 100} : {opacity: 0.17}}
+          />
+
+          <FontAwesomeIcon icon={faCircle} 
+          className="crew-nav-btn" 
+          onClick={() => {setCurrentCrewMember(Anousheh); setCurrentCrewImg(anoushehImg)}}
+          style={currentCrewMember.role === "FLIGHT ENGINEER" ? {opacity: 100} : {opacity: 0.17}}
+          />
         </div>
       </div>
 
-      <div className='img-container'>
-      <img src={currentCrewImg} alt="" className="dest-img"/>
+      <div className='crew-img-container'>
+      <img src={currentCrewImg} alt="" className="crew-img"/>
       </div>
     </div>
   )

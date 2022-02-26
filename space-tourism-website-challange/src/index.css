@@ -97,6 +97,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 a {
@@ -307,9 +308,51 @@ header {
 
 /* Crew */
 
+.header-container {
+  margin-top: 5%;
+}
+
+.crew-role {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.crew-name {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.crew-bio {
+  margin: 0;
+}
 .crew-nav-btn {
-  width: 1%;
-  height: 1%;
   margin-right: 1rem;
   cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.crew-nav {
+  top: 80%;
+  position: absolute;
+}
+
+.crew-img {
+  transform: scale(1.2);
+}
+
+.crew-text-container {
+  float: left;
+  height: auto;
+  width: 30%;
+  margin-top: 5%;
+  padding-left: 12%;
+}
+
+.crew-img-container {
+  margin-top: 0%;
+  position: relative;
+  top: 15px;
+  float: left;
+  margin-left: 15%;
 }
