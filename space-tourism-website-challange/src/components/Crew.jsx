@@ -7,7 +7,6 @@ import douglasImg from "../assets/crew/image-douglas-hurley.png";
 import markImg from "../assets/crew/image-mark-shuttleworth.png";
 import victorImg from "../assets/crew/image-victor-glover.png";
 import anoushehImg from "../assets/crew/image-anousheh-ansari.png";
-import button from "../assets/shared/circle-solid.svg";
 
 export const Crew = () => {
   const Douglas = {role: "COMMANDER", name: "DOUGLAS HURLEY", bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time ascommander of Crew Dragon Demo-2."};
