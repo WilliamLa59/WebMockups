@@ -23,12 +23,16 @@ export const Navbar = () => {
             <img src={logo} alt="" />
             <hr />
             </div>
-            <div className="bars-navbar" style={isShowing ? {display: "block"} : {display: "none"}}>
-            <img src={openIcon} alt="" />
+            <div className="bars-navbar" style={isShowing ? {display: "flex"} : {display: "none"}}>
+            <img src={openIcon} alt="" 
+            onClick={() => setIsShowing(!isShowing)}
+            />
             </div>
-            <ul className="navbar" style={isShowing ? {display: "flex"} : {display: "none"}}>
-                <div className='close' style={isShowing ? {display: "block"} : {display: "none"}}>
-                <img src={closeIcon} alt="" />
+            <ul className="navbar" style={isShowing ? {right: "0px"} : {right: "-50vh"}}>
+                <div className='close'>
+                <img src={closeIcon} alt="" 
+                onClick={() => setIsShowing(!isShowing)}
+                />
                 </div>
                 <li>
                     <Link to="/" className="nav-links" style={currentRoute === "/" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
