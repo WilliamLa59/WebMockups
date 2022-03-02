@@ -34,11 +34,10 @@ export const Destination = () => {
   document.body.className = "destination-page";
   return (
     <div>
-      
+      <div className='header-container'>
+        <h5 className=' dest-header'> <span>01 </span>PICK YOUR DESTINATION</h5>
+      </div>
       <div className='destination-container'>
-        <div className='header-container'>
-        <sub className='sub1 dest-header'> 0 1 PICK YOUR DESTINATION</sub>
-        </div>
         <div className="img-container">
           <img src={currentDestination} alt="" className="dest-img"/>
         </div>
@@ -71,14 +70,18 @@ export const Destination = () => {
             <h2>{currentDestTitle}</h2>
             <p>{currentDestDesc}</p>
             <hr></hr>
-            <div className='distance-text'>
-              <sub className='sub2'>AVG. DISTANCE</sub>
-              <h4>{distance}</h4>
+
+            <div className="dest-stats">
+              <div className='distance-text'>
+                <sub className='sub2'>AVG. DISTANCE</sub>
+                <h4>{distance}</h4>
+              </div>
+              <div className='travel-text'>
+                <sub className='sub2'>EST. TRAVEL TIME</sub>
+                <h4>{travelTime}</h4>
+              </div>
             </div>
-            <div className='travel-text'>
-              <sub className='sub2'>EST. TRAVEL TIME</sub>
-              <h4>{travelTime}</h4>
-            </div>
+            
           </div>
         </div>
       </div>

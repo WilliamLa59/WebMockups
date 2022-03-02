@@ -51,6 +51,8 @@ h4 {
 }
 
 h5 {
+  font-style: normal;
+  font-weight: normal;
   font-size: 28px;
   letter-spacing: 4.75px;
   color: var(--main-text-color);
@@ -58,7 +60,8 @@ h5 {
 
 .sub2 {
   font-size: 16px;
-  letter-spacing: 2.7px;
+  line-height: 19px;
+  letter-spacing: 4px;
   color: var(--main-title-color);
 }
 
@@ -69,6 +72,16 @@ p {
   font-weight: normal;
   line-height: 178%;
   letter-spacing: 2.7px;
+}
+
+.header-container {
+  letter-spacing: 4.725px;
+}
+
+.header-container span {
+  opacity: 0.25;
+  font-weight: bold;
+  letter-spacing: 4.725px;
 }
 
 .home-page {
@@ -161,13 +174,12 @@ header {
 
 .navbar li {
   display: inline-block;
-
+  letter-spacing: 2.7px;
   margin-left: 3%;
   margin-right: 3%;
   padding: 2rem 0;
   border-bottom: 2px solid transparent;
   transition: 0.5s ease;
-  letter-spacing: 2.7px;
 }
 
 .navbar a {
@@ -175,8 +187,10 @@ header {
   padding: 2rem 0;
   color: white;
 }
+
 .navbar span {
   font-weight: bold;
+  letter-spacing: 5px;
 }
 
 .navbar a:hover {
@@ -275,7 +289,7 @@ header {
 }
 .destination-text hr {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .destination-text h4 {
@@ -427,6 +441,27 @@ header {
 }
 
 @media (max-width: 450px) {
+  body {
+    overflow: auto;
+  }
+
+  .home-page {
+    background-image: url("../src/assets/home/background-home-mobile.jpg");
+  }
+
+  .destination-page {
+    background-image: url("../src/assets/destination/background-destination-mobile.jpg");
+  }
+
+  .crew-page {
+    background-image: url("../src/assets/crew/background-crew-mobile.jpg");
+  }
+
+  .technology-page {
+    background-image: url("../src/assets/technology/background-technology-mobile.jpg");
+  }
+
+  /* Navbar */
   .navbar-outside {
     display: block;
     position: fixed;
@@ -439,8 +474,8 @@ header {
   .bars-navbar {
     display: flex !important;
     z-index: 5;
-    margin-left: auto;
-    margin-right: 8%;
+    /* margin-left: auto;
+    margin-right: 8%; */
     /* margin-left: 30%; */
   }
 
@@ -473,7 +508,89 @@ header {
     margin-bottom: 10%;
   }
 
-  hr {
+  .logo hr {
     display: none;
+  }
+
+  /* Home */
+  .screen-container * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-text {
+    width: 100vw;
+    margin: 0;
+    transform: scale(0.8);
+    float: none;
+  }
+  .home-text h5,
+  h1,
+  p {
+    text-align: center;
+    width: 100vw;
+  }
+
+  .home-btn {
+    float: none;
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .btn-container {
+  }
+
+  /* Destination */
+
+  .dest-header {
+    margin-bottom: 0;
+  }
+
+  .destination-container {
+    margin: 0;
+  }
+
+  .destination-container * {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-container {
+    display: block;
+  }
+
+  .img-container {
+    transform: scale(0.8);
+  }
+
+  .dest-navbar {
+    display: block;
+  }
+
+  .destination-text {
+    float: none;
+    width: 100vw;
+  }
+
+  .destination-text hr {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .dest-stats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12%;
+  }
+
+  .distance-text {
+    margin-bottom: 10%;
   }
 }

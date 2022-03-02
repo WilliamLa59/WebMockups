@@ -36,19 +36,19 @@ export const Navbar = () => {
                 </div>
                 <li>
                     <Link to="/" className="nav-links" style={currentRoute === "/" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                        onClick={() => setCurrentRoute('/')}><span>00 </span> Home</Link>
+                    onClick={() => setCurrentRoute('/')}><sub className="sub2"><span>00 </span> HOME</sub></Link>
                 </li>
                 <li>
                     <Link to="/destination" className="nav-links" style={currentRoute === "/destination" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                        onClick={() => setCurrentRoute('/destination')}><span>01</span>  Destination</Link>
+                    onClick={() => setCurrentRoute('/destination')}><sub className="sub2"><span>01 </span>  DESTINATION</sub></Link>
                 </li>
                 <li>
                     <Link to="/crew" className="nav-links" style={currentRoute === "/crew" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                        onClick={() => setCurrentRoute('/crew')}><span>02 </span> Crew</Link>
+                    onClick={() => setCurrentRoute('/crew')}><sub className="sub2"><span>02 </span> CREW</sub></Link>
                 </li>
                 <li>
                     <Link to="/technology" className="nav-links" style={currentRoute === "/technology" ? {borderBottom: "2px solid white"} :{borderBottom: "2px solid transparent"}} 
-                        onClick={() => setCurrentRoute('/technology')}><span>03 </span> Technology</Link>
+                    onClick={() => setCurrentRoute('/technology')}><sub className="sub2"><span>03 </span> TECHNOLOGY</sub></Link>
                 </li>
                 </ul>
         </header>

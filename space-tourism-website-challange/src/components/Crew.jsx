@@ -30,7 +30,7 @@ export const Crew = () => {
   return (
     <div className='crew-container'>
       <div className='header-container'>
-        <sub className='sub1 crew-header'> 0 2 MEET YOUR CREW</sub>
+        <h5 className=' crew-header'><span>02 </span>MEET YOUR CREW</h5>
       </div>
       
       <div className='crew-text-container'>

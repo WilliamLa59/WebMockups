@@ -24,7 +24,7 @@ export const Technology = () => {
   return (
     <div className='tech-container'>
       <div className='header-container'>
-        <sub className='sub1 dest-header'> 0 3 SPACE LAUNCH 101</sub>
+        <h5 className=' dest-header'><span>03 </span>SPACE LAUNCH 101</h5>
       </div>
       <div className='tech-nav-container'>
 
