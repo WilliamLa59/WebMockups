@@ -687,4 +687,8 @@ header {
   .crew-text-container p {
     font-size: 19px;
   }
+
+  .crew-bio {
+    margin-bottom: 2rem;
+  }
 }
