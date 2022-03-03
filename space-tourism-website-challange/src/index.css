@@ -56,6 +56,7 @@ h5 {
   font-size: 28px;
   letter-spacing: 4.75px;
   color: var(--main-text-color);
+  margin: 0;
 }
 
 .sub2 {
@@ -257,7 +258,6 @@ header {
 .destination-container {
   width: 100%;
   height: 100%;
-  margin-top: 5%;
 }
 
 .header-container {
@@ -362,6 +362,7 @@ header {
 
 .crew-nav {
   top: 80%;
+  left: 12%;
   position: absolute;
 }
 
@@ -538,6 +539,7 @@ header {
 
   .home-text h5 {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 16px;
   }
 
@@ -560,9 +562,9 @@ header {
   }
 
   /* Destination */
-
   .dest-header {
     margin-bottom: 0;
+    text-align: center;
   }
 
   .destination-container {
@@ -578,6 +580,10 @@ header {
   }
 
   .header-container {
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
     display: block;
   }
 
@@ -611,5 +617,74 @@ header {
 
   .distance-text {
     margin-bottom: 10%;
+  }
+
+  /* Crew */
+  .crew-container,
+  .crew-text-container,
+  .crew-img-container,
+  .mobile-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .crew-img-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100vw;
+    order: 1;
+  }
+  .crew-img {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 20rem;
+    transform: scale(1);
+    object-fit: contain;
+  }
+  .mobile-hr {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .mobile-wrapper {
+    margin-top: 2rem;
+    order: 2;
+  }
+
+  .crew-nav {
+    left: 0%;
+    position: relative;
+  }
+
+  .crew-text-container {
+    margin-top: 1rem;
+    transform: scale(0.9);
+    width: 100vw;
+    order: 3;
+  }
+
+  .crew-text-container h4 {
+    font-size: 18px;
+  }
+
+  .crew-text-container h3 {
+    font-size: 26px;
+  }
+
+  .crew-text-container p {
+    font-size: 19px;
   }
 }

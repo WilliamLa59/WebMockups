@@ -43,6 +43,9 @@ export const Crew = () => {
         <div >
           <p className='crew-bio'>{currentCrewMember.bio}</p>
         </div>
+      </div>
+
+      <div className='mobile-wrapper'>
         <div className='crew-nav'>
         
           <FontAwesomeIcon icon={faCircle} 
@@ -70,9 +73,10 @@ export const Crew = () => {
           />
         </div>
       </div>
-
+    
       <div className='crew-img-container'>
       <img src={currentCrewImg} alt="" className="crew-img"/>
+      <hr className='mobile-hr'/>
       </div>
     </div>
   )
