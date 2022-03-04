@@ -485,7 +485,11 @@ header {
   }
 
   .bars-navbar img {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
+    width: 2rem;
+    height: 2rem;
   }
 
   .navbar {
@@ -509,7 +513,7 @@ header {
     display: block;
     margin-top: 4rem;
     margin-left: auto;
-    padding-right: 3.25rem;
+    padding-right: 2.5rem;
     margin-bottom: 10%;
   }
 
@@ -556,9 +560,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     transform: scale(0.8);
-  }
-
-  .btn-container {
   }
 
   /* Destination */
@@ -690,5 +691,54 @@ header {
 
   .crew-bio {
     margin-bottom: 2rem;
+  }
+
+  /* Technology */
+  .tech-container,
+  .tech-img-container,
+  .tech-nav-container,
+  .tech-text-container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tech-img-container {
+    order: 1;
+  }
+
+  .tech-nav-container {
+    flex-direction: row;
+    order: 2;
+  }
+
+  .tech-nav-btn {
+    float: left;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.7);
+  }
+  .middle-btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* margin-left: 0.25rem;
+    margin-right: 0.25rem; */
+  }
+
+  .tech-text-container {
+    transform: scale(0.8);
+    order: 3;
+  }
+
+  .tech-text-container h3 {
+    font-size: 46px;
+  }
+
+  .tech-text-container p {
+    margin-top: 0;
   }
 }
