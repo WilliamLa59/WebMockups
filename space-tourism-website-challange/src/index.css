@@ -179,7 +179,6 @@ header {
   margin-left: 3%;
   margin-right: 3%;
   padding: 2rem 0;
-  border-bottom: 2px solid transparent;
   transition: 0.5s ease;
 }
 
@@ -560,6 +559,273 @@ header {
     margin-left: auto;
     margin-right: auto;
     transform: scale(0.8);
+  }
+
+  /* Destination */
+  .dest-header {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .destination-container {
+    margin: 0;
+  }
+
+  .destination-container * {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-container {
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  .img-container {
+    transform: scale(0.8);
+  }
+
+  .dest-navbar {
+    display: block;
+  }
+
+  .destination-text {
+    float: none;
+    width: 100vw;
+  }
+
+  .destination-text hr {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .dest-stats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12%;
+  }
+
+  .distance-text {
+    margin-bottom: 10%;
+  }
+
+  /* Crew */
+  .crew-container,
+  .crew-text-container,
+  .crew-img-container,
+  .mobile-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .crew-img-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100vw;
+    order: 1;
+  }
+  .crew-img {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 20rem;
+    transform: scale(1);
+    object-fit: contain;
+  }
+  .mobile-hr {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .mobile-wrapper {
+    margin-top: 2rem;
+    order: 2;
+  }
+
+  .crew-nav {
+    left: 0%;
+    position: relative;
+  }
+
+  .crew-text-container {
+    margin-top: 1rem;
+    transform: scale(0.9);
+    width: 100vw;
+    order: 3;
+  }
+
+  .crew-text-container h4 {
+    font-size: 18px;
+  }
+
+  .crew-text-container h3 {
+    font-size: 26px;
+  }
+
+  .crew-text-container p {
+    font-size: 19px;
+  }
+
+  .crew-bio {
+    margin-bottom: 2rem;
+  }
+
+  /* Technology */
+  .tech-container,
+  .tech-img-container,
+  .tech-nav-container,
+  .tech-text-container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tech-img-container {
+    order: 1;
+  }
+
+  .tech-img-container img {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+  }
+
+  .tech-nav-container {
+    flex-direction: row;
+    order: 2;
+  }
+
+  .tech-nav-btn {
+    float: left;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.7);
+  }
+  .middle-btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* margin-left: 0.25rem;
+    margin-right: 0.25rem; */
+  }
+
+  .tech-text-container {
+    transform: scale(0.8);
+    order: 3;
+  }
+
+  .tech-text-container h3 {
+    font-size: 46px;
+  }
+
+  .tech-text-container p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  .home-page {
+    background-image: url("../src/assets/home/background-home-tablet.jpg");
+  }
+
+  .destination-page {
+    background-image: url("../src/assets/destination/background-destination-tablet.jpg");
+  }
+
+  .crew-page {
+    background-image: url("../src/assets/crew/background-crew-tablet.jpg");
+  }
+
+  .technology-page {
+    background-image: url("../src/assets/technology/background-technology-tablet.jpg");
+  }
+
+  /* Navbar */
+
+  .header {
+    padding: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .navbar li span {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 1.5rem;
+  }
+
+  .logo hr {
+    display: none;
+  }
+
+  /* Home */
+  .home-text {
+    width: 100vw;
+    margin: 0;
+    float: none;
+  }
+
+  .home-text h5,
+  h1,
+  p {
+    /* margin: 0; */
+    text-align: center;
+    /* transform: scale(0.9); */
+  }
+
+  .home-text h5 {
+    margin-top: 4rem;
+  }
+
+  .home-text p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    align-items: center;
+  }
+
+  .home-btn {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.9);
   }
 
   /* Destination */
