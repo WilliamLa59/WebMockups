@@ -1,6 +1,7 @@
 # Space Tourism Website
 
 This project was done as a challenge on Frontend Mentor.
+
 Challange can be found here: https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
 
 The challange is to recreate a website as closely as possible with the provided assets and the figma wireframes as a guideline for styling and layout.
