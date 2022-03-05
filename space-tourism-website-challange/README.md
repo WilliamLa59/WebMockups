@@ -6,6 +6,8 @@ Challange can be found here: https://www.frontendmentor.io/challenges/space-tour
 
 I created this in React, and was mainly practice for the utilization of Components and Hooks as well as general practice for HTML and CSS.
 
+### Notes
+
   Things I did wrong:
 
   - Crew page has multiple different states for things like crew name, role, and bio. (Fixed this in later components by using state objects)
