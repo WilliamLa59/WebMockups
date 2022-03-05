@@ -65,7 +65,7 @@ export const Technology = () => {
       <div className='tech-img-container'>
         {/* <img src={currentTechImg} alt="" /> */}
           <picture>
-            <source media='(max-width: 768px)' srcSet={currentTechImg.landscape}/>
+            <source media='(max-width: 1024px)' srcSet={currentTechImg.landscape}/>
             <img src={currentTechImg.portrait} alt="" />
           </picture>
       </div>
