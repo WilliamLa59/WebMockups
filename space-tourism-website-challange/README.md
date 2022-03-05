@@ -3,7 +3,6 @@
 This project was done as a challenge on Frontend Mentor.
 Challange can be found here: https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
 
-
 The challange is to recreate a website as closely as possible with the provided assets and the figma wireframes as a guideline for styling and layout.
 
 I chose to create this in React, and was mainly practice for the utilization of Components and Hooks as well as general practice for HTML and CSS.
