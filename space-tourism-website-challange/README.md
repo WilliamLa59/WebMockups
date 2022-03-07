@@ -16,6 +16,6 @@ Things I did wrong:
 - Crew page has multiple different states for things like crew name, role, and bio. (Fixed this in later components by using state objects)
 - The CSS is all in one file.(Should learn a CSS compiler for the future. navigating through the CSS file was a nightmare.)
 - Using float most of the time. fine at certain points but finicky to work with. (Learned to use flex and flex-direction in the later stages of development, way easier).
-  - Using flex and grid would've made making the website responsive so much easier.
+  - Using flex and grid would've also made making the website responsive so much easier.
 - Uniformity in CSS, units are all over the place. Started with em, moved to %s, then ended with mostly rem. (pick one unit and stick with it)
 
