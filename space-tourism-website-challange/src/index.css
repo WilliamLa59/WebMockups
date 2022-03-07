@@ -385,6 +385,10 @@ header {
   margin-left: 15%;
 }
 
+.mobile-hr {
+  display: none;
+}
+
 /* Technology */
 .tech-nav-btn {
   font-family: "Bellefair", serif;
@@ -603,10 +607,11 @@ header {
   .header-container {
     text-align: left;
   }
+
   .crew-text-container {
-    margin-top: 2rem;
-    transform: scale(0.9);
+    transform: scale(0.8);
     width: 100vw;
+    height: 14rem;
     order: 1;
   }
 
@@ -615,26 +620,22 @@ header {
   }
 
   .crew-text-container h3 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 40px;
   }
 
   .crew-text-container p {
-    width: 80vw;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
     font-size: 16px;
   }
 
-  .crew-bio {
-    margin-bottom: 2rem;
-  }
-
   .mobile-wrapper {
-    margin-top: 2rem;
     order: 2;
+    margin-bottom: 2rem;
   }
 
   .crew-nav {
@@ -652,10 +653,9 @@ header {
   }
 
   .crew-img {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    width: 25rem;
     height: 25rem;
     object-fit: contain;
   }
@@ -978,6 +978,10 @@ header {
 
   .crew-bio {
     margin-bottom: 2rem;
+  }
+
+  .mobile-hr {
+    display: inline;
   }
 
   /* Technology */

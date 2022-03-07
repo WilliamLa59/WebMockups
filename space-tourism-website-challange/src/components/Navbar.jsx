@@ -13,7 +13,7 @@ export const Navbar = () => {
     const [isShowing, setIsShowing] = useState(false);
     const [currentRoute, setCurrentRoute] = useState(location.pathname)
     return (
-        <header>
+        <header className='header'>
             <div
             className='navbar-outside'
             style={isShowing ? {display: "block"} : {display: "none"}}
