@@ -6,8 +6,6 @@ The goal for this project is to practice creating React components as well as be
 
 ### CSS preprocessor Options
 
-<<<<<<< HEAD
-
 - ~~SASS
 - LESS
 - ~~Stylus
