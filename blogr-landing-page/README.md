@@ -4,6 +4,7 @@ A junior Challange on FrontEnd Mentor with all assets are provided. Found Here: 
 
 The goal for this project is to practice creating React components as well as becoming more comfortable with CSS Flex and Grid. I'll also be learning how to use a CSS preprocessor and a UI Framework in conjunction with React(both are still to be determined).
 
+```
 ### CSS preprocessor Options
 
 - ~~SASS~~
@@ -15,3 +16,4 @@ The goal for this project is to practice creating React components as well as be
 - ~~Material UI~~
 - Chakra UI
 - ~~React-Bootstrap~~
+```
