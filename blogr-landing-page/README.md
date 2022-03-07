@@ -6,12 +6,12 @@ The goal for this project is to practice creating React components as well as be
 
 ### CSS preprocessor Options
 
--SASS 
--~~~LESS~~~ 
--~~~Stylus~~~
+- SASS 
+- ~~~LESS~~~ 
+- ~~~Stylus~~~
 
 ### UI Framework Options
 
--~~~Material UI~~~
--Chakra UI 
--~~~React-Bootstrap~~~
+- ~~~Material UI~~~
+- Chakra UI 
+- ~~~React-Bootstrap~~~
