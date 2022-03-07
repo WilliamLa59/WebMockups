@@ -8,12 +8,12 @@ The goal for this project is to practice creating React components as well as be
 
 <<<<<<< HEAD
 
-- ~~SASS
+- ~~SASS~~
 - LESS
-- ~~Stylus
+- ~~Stylus~~
 
 ### UI Framework Options
 
-- ~~Material UI
+- ~~Material UI~~
 - Chakra UI
-- ~~React-Bootstrap
+- ~~React-Bootstrap~~
