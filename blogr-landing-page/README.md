@@ -8,7 +8,7 @@ The goal for this project is to practice creating React components as well as be
 - ~~SASS~~
 - LESS
 - ~~Stylus~~
-- 
+
 ## UI Framework Options
 - ~~Material UI~~
 - Chakra UI
