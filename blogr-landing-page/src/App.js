@@ -1,4 +1,5 @@
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { Lead } from './components/Lead';
@@ -8,11 +9,13 @@ import { Walkthrough } from './components/Walkthrough';
 function App() {
   return (
     <div className="App">
+      <ChakraProvider>
       <Navbar/>
       <Hero/>
       <Lead/>
       <Walkthrough/>
-      <Footer/>      
+      <Footer/>  
+      </ChakraProvider>    
     </div>
   );
 }
