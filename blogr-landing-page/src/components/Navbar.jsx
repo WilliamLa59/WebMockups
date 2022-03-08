@@ -1,48 +1,56 @@
-import { Box,Text, Button, ButtonGroup, Menu, MenuButton,  MenuList, MenuItem,} from '@chakra-ui/react'
+import { Box,Text, Button, Grid, Menu, MenuButton,  MenuList, MenuItem,} from '@chakra-ui/react'
 import {ChevronDownIcon, ChevronUpIcon} from "@chakra-ui/icons"
 import React from 'react'
 
 export const Navbar = () => {
   return (
-    <div>
-      <Box bg="black" w="100%" p={4} color="black">
-        <Text color="white">
+    <Box bg="transparent" w="100%" p={4} color="black" display="flex">
+      
+      <div className='Logo'>
+        <Text fontSize="24" fontWeight="bold">
           Blogr
         </Text>
+      </div>
+      
+      <div className='menuLinks'>
+        <Menu >
+          {({ isOpen }) => (
+            <>
+              <MenuButton isActive={isOpen}>
+                <Text textDecoration={ isOpen? "underline" : "none" }>Products {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
+              </MenuButton>
+              <MenuList>
+                <MenuItem>Overview</MenuItem>
+                <MenuItem>Pricing</MenuItem>
+                <MenuItem>Marketplace</MenuItem>
+                <MenuItem>Features</MenuItem>
+                <MenuItem>Integration</MenuItem>
+              </MenuList>
+            </>
+          )}
+        </Menu>
 
         <Menu >
           {({ isOpen }) => (
             <>
-              <MenuButton isActive={isOpen} as={Button} rightIcon={isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}>
-                Products
+              <MenuButton isActive={isOpen}>
+                <Text textDecoration={ isOpen? "underline" : "none" }>Company {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
               </MenuButton>
               <MenuList>
-                <MenuItem>Product 1</MenuItem>
-                <MenuItem>Product 2</MenuItem>
-                <MenuItem>Product 3</MenuItem>
-              </MenuList>
-            </>
-          )}
-        </Menu>
-        <Menu >
-          {({ isOpen }) => (
-            <>
-              <MenuButton isActive={isOpen} as={Button} rightIcon={isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}>
-                Company
-              </MenuButton>
-              <MenuList>
-                <MenuItem>About Us</MenuItem>
+                <MenuItem>About</MenuItem>
                 <MenuItem>Team</MenuItem>
-                <MenuItem>FAQ</MenuItem>
+                <MenuItem>Blog</MenuItem>
+                <MenuItem>Careers</MenuItem>
               </MenuList>
             </>
           )}
         </Menu>
+
         <Menu >
           {({ isOpen }) => (
             <>
-              <MenuButton isActive={isOpen} as={Button} rightIcon={isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}>
-                Connect
+              <MenuButton isActive={isOpen}>
+                <Text textDecoration={ isOpen? "underline" : "none" }>Connect {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
               </MenuButton>
               <MenuList>
                 <MenuItem>Contact</MenuItem>
@@ -52,11 +60,13 @@ export const Navbar = () => {
             </>
           )}
         </Menu>
+      </div>
 
+      <div className='menuButtons'>
         <Button>Login</Button>
         <Button>Sign Up</Button>
-      </Box>
+      </div>
 
-    </div>
+    </Box>
   )
 }
