@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <ChakraProvider>
-      <Navbar/>
       <Hero/>
       <Lead/>
       <Walkthrough/>

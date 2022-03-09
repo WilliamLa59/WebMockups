@@ -6,13 +6,13 @@ export const Navbar = () => {
   return (
     <Box bg="transparent" w="100%" p={4} color="black" display="flex">
       
-      <div className='Logo'>
+      <div className='nav-logo'>
         <Text fontSize="24" fontWeight="bold">
           Blogr
         </Text>
       </div>
       
-      <div className='menuLinks'>
+      <div className='nav-menulinks'>
         <Menu >
           {({ isOpen }) => (
             <>
@@ -62,8 +62,8 @@ export const Navbar = () => {
         </Menu>
       </div>
 
-      <div className='menuButtons'>
-        <Button>Login</Button>
+      <div className='nav-menuButtons'>
+        <Button variant="ghost">Login</Button>
         <Button>Sign Up</Button>
       </div>
 
