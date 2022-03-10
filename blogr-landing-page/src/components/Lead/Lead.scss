@@ -1,0 +1,36 @@
+.lead-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.lead-header {
+  position: relative;
+  text-align: center;
+  top: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.lead-text-container {
+  width: 31rem;
+}
+
+.text-title {
+  margin-bottom: 1rem;
+}
+
+.text-spacer {
+  margin-top: 4rem;
+}
+
+.lead-img-container {
+  img {
+    position: relative;
+    transform: scale(1.2);
+    left: 8.5rem;
+    overflow: hidden;
+  }
+}

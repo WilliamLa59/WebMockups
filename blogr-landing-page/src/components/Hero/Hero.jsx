@@ -13,7 +13,7 @@ export const Hero = () => {
 
         <Center>
           <div className='hero-header'>
-            <Text fontSize="100" fontWeight="500" letterSpacing="0.5">
+            <Text fontSize="68" fontWeight="500" letterSpacing="0.5">
               A mondern publishing platform
             </Text>
           </div>
@@ -21,7 +21,7 @@ export const Hero = () => {
 
         <Center>
           <div className='hero-sub'>
-            <Text fontSize="28" fontWeight="500">
+            <Text fontSize="18" fontWeight="500">
               Grow your audience and build your online brand
             </Text>
           </div>
