@@ -27,10 +27,10 @@
 }
 
 .lead-img-container {
+  overflow-x: clip;
   img {
     position: relative;
     transform: scale(1.2);
     left: 8.5rem;
-    overflow: hidden;
   }
 }
