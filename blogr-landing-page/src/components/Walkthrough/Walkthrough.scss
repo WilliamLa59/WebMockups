@@ -1,0 +1,21 @@
+.wlkthr-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wlkthr-img-contrainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  img {
+    position: relative;
+    right: 12.75rem;
+  }
+}
+
+.wlkthr-text-container {
+  width: 31rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}

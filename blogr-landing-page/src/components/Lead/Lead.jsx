@@ -6,6 +6,7 @@ import './Lead.scss'
 export const Lead = () => {
   return (
     <div className='lead-container'>
+      
       <Center>
         <div className='lead-header'>
           <Text fontSize='36' fontWeight="bold">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Center } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import midBannerImg from '../../StartingFiles/images/illustration-phones.svg'
 import "./Midbanner.scss"
 
@@ -11,7 +11,6 @@ export const Midbanner = () => {
             <img src={midBannerImg} alt="" />
         </div>
 
-        {/* <Center> */}
             <div className='midbanner-text-container'>
 
                 <div className='midbanner-header'>
@@ -26,7 +25,6 @@ export const Midbanner = () => {
                 </div>
 
             </div>
-        {/* </Center> */}
     </div>
   )
 }
