@@ -66,8 +66,8 @@ export const Navbar = () => {
       </div>
 
       <div className='nav-btns-container'>
-        <Button variant="ghost">Login</Button>
-        <Button>Sign Up</Button>
+        <Button className='login-btn' variant="ghost">Login</Button>
+        <Button className='signup-btn'>Sign Up</Button>
       </div>
 
     </div>

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+// Fonts
+$titleFont: "Overpass", sans-serif;
+$bodyFont: "Ubuntu", sans-serif;
+
+// Colours
+// TextColours
+$headingColour: hsl(208, 49%, 24%);
+$bodyTextColour: hsl(207, 13%, 34%);
+$whiteTextColour: hsl(0, 0%, 100%);
+$footerTextColour: hsl(240, 2%, 79%);
+$btnlightRedColour: hsl(355, 100%, 74%);
+$btnRedColour: hsl(356, 100%, 66%);
+
+// BackgroundColours
+$heroLightRed: hsl(13, 100%, 72%);
+$heroRed: hsl(353, 100%, 62%);
+
+$bannerDarkGrey: hsl(237, 17%, 21%);
+$bannerLightGrey: hsl(237, 23%, 32%);
+
+$footerDarkGrey: hsl(240, 10%, 16%);
+
+.text-title {
+  margin-bottom: 1rem;
+  color: $headingColour;
+  font-family: $titleFont;
+}
+.text-spacer {
+  margin-top: 4rem;
+}
+.text-body {
+  color: $bodyTextColour;
+  font-family: $bodyFont;
+}

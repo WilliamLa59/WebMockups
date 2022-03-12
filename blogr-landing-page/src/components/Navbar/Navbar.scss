@@ -1,7 +1,11 @@
+@import "../Shared/Shared.scss";
+
 .nav-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: transparent;
+  color: $whiteTextColour;
+  font-family: $bodyFont;
 }
 
 .nav-wrapper {
@@ -13,8 +17,16 @@
   margin-right: 4rem;
 }
 
+.nav-link-container {
+  color: $footerTextColour;
+}
+
 .nav-btns-container {
   display: flex;
   justify-content: flex-end;
   margin-right: 8rem;
+}
+
+.signup-btn {
+  color: $btnRedColour;
 }

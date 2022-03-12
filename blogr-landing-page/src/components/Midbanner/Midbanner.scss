@@ -1,6 +1,8 @@
+@import "../Shared/Shared.scss";
+
 .midbanner-container {
   background-image: url("../../StartingFiles/images/bg-pattern-circles.svg"),
-    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    linear-gradient(to right, $bannerDarkGrey, $bannerLightGrey);
   background-position: -59% 81%;
   background-repeat: no-repeat;
   display: grid;
@@ -33,4 +35,11 @@
 
 .midbanner-header {
   margin-bottom: 2rem;
+  color: $whiteTextColour;
+  font-family: $titleFont;
+}
+
+.midbanner-text {
+  color: $footerTextColour;
+  font-family: $bodyFont;
 }
