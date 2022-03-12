@@ -10,8 +10,8 @@ export const Navbar = () => {
       
       <div className='nav-wrapper'>
         <div className='nav-logo'>
-          <Text fontSize="24" fontWeight="bold">
-            Blogr
+          <Text fontSize='32' fontWeight='bold'>
+            BIogr
           </Text>
         </div>
           <Stack className='nav-link-container' direction="row" spacing={4} align="center">
