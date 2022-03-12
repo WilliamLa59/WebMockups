@@ -27,10 +27,16 @@ $footerDarkGrey: hsl(240, 10%, 16%);
   color: $headingColour;
   font-family: $titleFont;
 }
+
 .text-spacer {
   margin-top: 4rem;
 }
+
 .text-body {
   color: $bodyTextColour;
   font-family: $bodyFont;
+}
+
+.btn-spacer {
+  margin-right: 1rem;
 }

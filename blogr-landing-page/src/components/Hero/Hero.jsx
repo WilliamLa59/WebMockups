@@ -29,10 +29,10 @@ export const Hero = () => {
 
         <Center>
           <div className='hero-btns'>
-            <Button className='start-btn'>
+            <Button className='start-btn btn-spacer' variant="primary2">
               Start for Free
             </Button>
-            <Button className='learn-btn'variant="outline">
+            <Button className='learn-btn' variant="secondary2">
               Learn More
             </Button>
           </div>

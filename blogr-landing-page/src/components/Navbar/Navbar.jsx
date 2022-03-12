@@ -21,7 +21,7 @@ export const Navbar = () => {
                   <MenuButton isActive={isOpen}>
                     <Text textDecoration={ isOpen? "underline" : "none" }>Products {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
                   </MenuButton>
-                  <MenuList>
+                  <MenuList color="black">
                     <MenuItem _focus={{fontWeight: "bold"}}>Overview</MenuItem>
                     <MenuItem _focus={{fontWeight: "bold"}}>Pricing</MenuItem>
                     <MenuItem _focus={{fontWeight: "bold"}}>Marketplace</MenuItem>
@@ -38,7 +38,7 @@ export const Navbar = () => {
                   <MenuButton isActive={isOpen}>
                     <Text textDecoration={ isOpen? "underline" : "none" }>Company {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
                   </MenuButton>
-                  <MenuList>
+                  <MenuList color="black">
                     <MenuItem _focus={{fontWeight: "bold"}}>About</MenuItem>
                     <MenuItem _focus={{fontWeight: "bold"}}>Team</MenuItem>
                     <MenuItem _focus={{fontWeight: "bold"}}>Blog</MenuItem>
@@ -54,7 +54,7 @@ export const Navbar = () => {
                   <MenuButton isActive={isOpen}>
                     <Text textDecoration={ isOpen? "underline" : "none" }>Connect {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
                   </MenuButton>
-                  <MenuList>
+                  <MenuList color="black">
                     <MenuItem _focus={{fontWeight: "bold"}}>Contact</MenuItem>
                     <MenuItem _focus={{fontWeight: "bold"}}>Newsletter</MenuItem>
                     <MenuItem _focus={{fontWeight: "bold"}}>LinkedIn</MenuItem>
@@ -66,8 +66,9 @@ export const Navbar = () => {
       </div>
 
       <div className='nav-btns-container'>
-        <Button className='login-btn' variant="ghost">Login</Button>
-        <Button className='signup-btn'>Sign Up</Button>
+        <Button className='login-btn btn-spacer' variant="secondary1">Login</Button>
+        <Button variant="primary1">Sign Up</Button>
+        {/* className='signup-btn' */}
       </div>
 
     </div>

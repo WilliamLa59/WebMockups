@@ -5,11 +5,12 @@ import { Hero } from './components/Hero/Hero';
 import { Lead } from './components/Lead/Lead';
 import { Walkthrough } from './components/Walkthrough/Walkthrough';
 import { Midbanner } from './components/Midbanner/Midbanner';
+import { newTheme } from './components/Shared/Theme';
 
 function App() {
   return (
     <div className="App">
-      <ChakraProvider>
+      <ChakraProvider theme={newTheme}>
       <Hero/>
       <Lead/>
       <Midbanner/>
