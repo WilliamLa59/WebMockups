@@ -1,32 +1,47 @@
 @import "../Shared/Shared.scss";
 
 .nav-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background: transparent;
   color: $whiteTextColour;
   font-family: $bodyFont;
+}
+
+.nav-logo {
+  display: flex;
+  margin-left: 8rem;
+  margin-right: 4rem;
 }
 
 .nav-wrapper {
   display: flex;
 }
 
-.nav-logo {
-  margin-left: 8rem;
-  margin-right: 4rem;
-}
-
 .nav-link-container {
-  color: $footerTextColour;
+  color: $whiteTextColour;
 }
 
 .nav-btns-container {
-  display: flex;
-  justify-content: flex-end;
   margin-right: 8rem;
+  margin-left: auto;
 }
 
 .signup-btn {
   color: $btnRedColour;
+}
+
+.mobile-nav {
+  margin-right: 8rem;
+  margin-left: auto;
+}
+
+@media (max-width: 375px) {
+  .nav-logo {
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+
+  .mobile-nav {
+    margin-right: 2rem;
+    margin-left: auto;
+  }
 }
