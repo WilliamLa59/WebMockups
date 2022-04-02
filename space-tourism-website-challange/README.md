@@ -1,5 +1,7 @@
 # Space Tourism Website
 
+Live Demo: https://wl-space-tourism-challenge.herokuapp.com/technology
+
 This project was done as a challenge on Frontend Mentor.
 
 Challange can be found here: https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
