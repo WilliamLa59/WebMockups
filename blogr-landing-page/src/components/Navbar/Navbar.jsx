@@ -1,4 +1,4 @@
-import {Text, Button, Menu, MenuButton,  MenuList, MenuItem, Stack, Flex, IconButton, Collapse, onToggle, useDisclosure} from '@chakra-ui/react'
+import {Text, Button, Menu, MenuButton,  MenuList, MenuItem, Stack, Flex, IconButton, Collapse, onToggle, useDisclosure, VStack} from '@chakra-ui/react'
 import {ChevronDownIcon, ChevronUpIcon , HamburgerIcon} from "@chakra-ui/icons"
 import React from 'react'
 import './Navbar.scss'
@@ -6,7 +6,9 @@ import './Navbar.scss'
 
 export const Navbar = () => {
 
-  const {isOpen, onToggle} = useDisclosure();
+  const {isOpen:productOpen, onToggle:productToggle} = useDisclosure();
+  const {isOpen:companyOpen, onToggle:companyToggle} = useDisclosure();
+  const {isOpen:connectOpen, onToggle:connectToggle} = useDisclosure();
 
   return (
     <div className='nav-container'>
@@ -81,39 +83,39 @@ export const Navbar = () => {
             
             <MenuList>
               <Menu className="nav-links" color='black'>
-                
+                <VStack>
                 <>
-                  <MenuButton onClick={onToggle} color="black">
-                    <Text>Products {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
+                  <MenuButton onClick={productToggle} color="black">
+                    <Text>Products {productOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
                   </MenuButton>
-                  <Collapse in={isOpen} animateOpacity color="black">
-                    <MenuItem _focus={{fontWeight: "bold"}}>Overview</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Pricing</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Marketplace</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Features</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Integration</MenuItem>
+                  <Collapse in={productOpen} animateOpacity color="black">
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Overview</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Pricing</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Marketplace</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Features</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Integration</MenuItem>
                   </Collapse>
 
-                  <MenuButton onClick={onToggle} color="black">
-                    <Text>Company {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
+                  <MenuButton onClick={companyToggle} color="black">
+                    <Text>Company {companyOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
                   </MenuButton>
-                  <Collapse in={isOpen} animateOpacity color="black">
-                    <MenuItem _focus={{fontWeight: "bold"}}>About</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Team</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Blog</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Careers</MenuItem>
+                  <Collapse in={companyOpen} animateOpacity color="black">
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">About</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Team</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Blog</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Careers</MenuItem>
                   </Collapse>
 
-                  <MenuButton onClick={onToggle} color="black">
-                    <Text>Connect {isOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
+                  <MenuButton onClick={connectToggle} color="black">
+                    <Text>Connect {connectOpen? <ChevronUpIcon/>:<ChevronDownIcon />}</Text>
                   </MenuButton>
-                  <Collapse in={isOpen} animateOpacity color="black">
-                    <MenuItem _focus={{fontWeight: "bold"}}>Contact</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>Newsletter</MenuItem>
-                    <MenuItem _focus={{fontWeight: "bold"}}>LinkedIn</MenuItem>
+                  <Collapse in={connectOpen} animateOpacity color="black">
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Contact</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">Newsletter</MenuItem>
+                    <MenuItem _focus={{fontWeight: "bold"}} color="black">LinkedIn</MenuItem>
                   </Collapse>
                 </>
-                
+                </VStack>
               </Menu>
 
             </MenuList>  
